@@ -1,11 +1,15 @@
 import { useSearchParams } from "react-router-dom"
 
 function Param2() {
-    console.log(useSearchParams());
-    //console.log(id);
+    const [params] = useSearchParams();
+    const id = params.get("id")
+    const name = params.get("name")
+    console.log(params.get("id"));
+    console.log(params.get("name"));
     return (
         <>
-            
+            <p>id : {id}</p>
+            <p>name : {name}</p>
         </>
     )
 }
