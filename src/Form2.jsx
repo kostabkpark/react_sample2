@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 function Form2() {
+    console.log("form2 rendered ~~~~");
     const [person, setPerson] = useState({
         name:"",
         age:0,

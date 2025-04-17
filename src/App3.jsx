@@ -11,8 +11,8 @@ function App() {
     console.log(index);
     return (
         <>
-            <select name="converter" id="converter" onChange={onSelect}>
-                <option value="0" selected>Select unit converter</option>
+            <select name="converter" id="converter" onChange={onSelect} value={index}>
+                <option value="0">Select unit converter</option>
                 <option value="1">Time converter</option>
                 <option value="2">Length converter</option>
             </select>
